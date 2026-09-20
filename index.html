@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An educational guide to the Ottawa Food Bank, food insecurity, and how to find help.">
+  <title>Ottawa Food Bank Resource Guide</title>
+  <style>
+    :root { --ink:#173247; --green:#177b70; --lime:#9ccf65; --gold:#f5b63f; --cream:#f7f4ed; --mist:#e6f2ef; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--cream); font:16px/1.55 Arial, Helvetica, sans-serif; }
+    a { color:#056d65; text-decoration-thickness:2px; text-underline-offset:3px; }
+    a:hover { color:#0a4d4b; }
+    .wrap { width:min(1120px, calc(100% - 40px)); margin:auto; }
+    header { background:var(--ink); color:white; padding:18px 0; }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .brand { font-weight:800; letter-spacing:.01em; text-decoration:none; color:white; }
+    .navlinks { display:flex; gap:18px; flex-wrap:wrap; font-size:.92rem; }
+    .navlinks a { color:#dff4ec; text-decoration:none; }
+    .hero { background:var(--ink); color:white; overflow:hidden; position:relative; padding:82px 0 90px; }
+    .hero:before, .hero:after { content:""; position:absolute; border-radius:50%; opacity:.98; }
+    .hero:before { width:320px; height:320px; background:var(--green); right:-110px; top:-155px; }
+    .hero:after { width:108px; height:108px; background:var(--gold); right:16%; bottom:-42px; }
+    .eyebrow { margin:0 0 18px; color:#c4e89a; font-weight:800; letter-spacing:.11em; font-size:.78rem; }
+    h1,h2,h3 { line-height:1.08; margin:0; }
+    h1 { max-width:760px; font-size:clamp(2.75rem, 7vw, 5.6rem); letter-spacing:-.055em; }
+    .hero p { max-width:650px; font-size:1.18rem; margin:23px 0 0; color:#e5f5f2; }
+    .notice { background:var(--mist); border-left:5px solid var(--green); padding:16px 18px; margin:32px auto; border-radius:0 8px 8px 0; }
+    section { padding:64px 0; }
+    .section-top { display:flex; gap:24px; justify-content:space-between; align-items:end; margin-bottom:27px; }
+    .section-top h2 { font-size:clamp(1.8rem,4vw,3rem); letter-spacing:-.035em; }
+    .section-top p { margin:0; max-width:500px; color:#4c616b; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { background:white; border-radius:13px; padding:25px; box-shadow:0 4px 18px #17324712; }
+    .card h3 { color:var(--green); font-size:1.16rem; margin-bottom:10px; }
+    .card p { margin:0; }
+    .stats { background:var(--green); color:white; }
+    .stats .section-top p { color:#d5f0e8; }
+    .stat-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .stat { border:1px solid #b7e0d4; padding:24px; border-radius:12px; }
+    .stat strong { display:block; color:var(--lime); font-size:2.3rem; line-height:1; margin-bottom:8px; }
+    .split { display:grid; grid-template-columns:1.08fr .92fr; gap:30px; align-items:start; }
+    .determinants { background:#dcece8; border-radius:14px; padding:29px; }
+    .determinants ul { margin:15px 0 0; padding-left:20px; }
+    .determinants li { margin:7px 0; }
+    .timeline { border-left:3px solid var(--gold); padding-left:22px; }
+    .timeline .year { font-weight:800; color:var(--green); }
+    .timeline p { margin:5px 0 21px; }
+    .help { background:var(--gold); }
+    .helpbox { background:white; border-radius:16px; padding:31px; display:grid; grid-template-columns:1fr auto; gap:28px; align-items:center; }
+    .button { display:inline-block; color:white; background:var(--ink); font-weight:800; padding:13px 18px; border-radius:8px; text-decoration:none; }
+    .sources { font-size:.93rem; }
+    .sources li { margin:12px 0; }
+    footer { background:var(--ink); color:#d8e7e5; padding:34px 0; font-size:.9rem; }
+    footer p { margin:0; max-width:850px; }
+    @media (max-width:760px) { .grid,.stat-grid,.split,.helpbox { grid-template-columns:1fr; } .section-top { align-items:start; flex-direction:column; } .hero { padding:64px 0 74px; } nav { align-items:start; flex-direction:column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">Food Access is Health</a>
+      <div class="navlinks"><a href="#about">About</a><a href="#health">Health</a><a href="#connect">Find help</a><a href="#sources">Sources</a></div>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">OTTAWA COMMUNITY RESOURCE GUIDE</p>
+        <h1>Good food is health care.</h1>
+        <p>Learn what the Ottawa Food Bank does, who it helps, and how people in Ottawa can get food support.</p>
+      </div>
+    </section>
+    <div class="wrap notice"><strong>PSA Assignment by Daniel O.</strong></div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-top"><h2>What the Ottawa Food Bank does</h2><p>The Ottawa Food Bank helps people get food when money is tight.</p></div>
+        <div class="grid">
+          <article class="card"><h3>Purpose</h3><p>The Ottawa Food Bank helps people in Ottawa who need food. People can get food, volunteer, or donate. The Food Bank grows food and accepts donations from local farmers.</p></article>
+          <article class="card"><h3>Food and essentials</h3><p>It helps provide fresh food, canned food, and useful items like diapers, baby food, toiletries, and cleaning supplies.</p></article>
+          <article class="card"><h3>Community action</h3><p>People can get food through a local program. They can also volunteer, donate food or money, or run a food drive. The Food Bank grows some food and accepts donations from farmers and neighbours.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="wrap">
+        <div class="section-top"><h2>Who is served</h2><p>The Food Bank helps people in Ottawa who cannot afford enough good food or who are having a hard time with money.</p></div>
+        <div class="stat-grid">
+          <div class="stat"><strong>Ottawa</strong><span>It serves people in Ottawa. Community food programs usually serve the area around a person's home.</span></div>
+          <div class="stat"><strong>All ages</strong><span>Individuals and families use the Food Bank. About 37% of people helped are children. Not having enough food can affect a child's learning and future.</span></div>
+          <div class="stat"><strong>All genders</strong><span>People of all genders, ages, cultures, and abilities deserve access to healthy food.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="health">
+      <div class="wrap split">
+        <div>
+          <div class="section-top"><h2>Food insecurity is a health issue</h2></div>
+          <p>Food insecurity is when someone does not have enough money to buy the food they need. This can mean worrying about food, eating less, skipping meals, or sometimes going without food.</p>
+          <p>It can affect a person's body, stress level, and ability to learn. Food banks help in an emergency, but people also need enough income and affordable housing.</p>
+          <h3 style="margin-top:25px;color:var(--green)">Dimensions of health supported</h3>
+          <p><strong>Physical health:</strong> healthy food supports energy, growth, and staying well. <strong>Intellectual health:</strong> good food helps children learn and develop. Getting food support can also lower stress.</p>
+        </div>
+        <aside class="determinants">
+          <h2>Determinants of health</h2>
+          <p>The Food Bank helps with two important things that affect health:</p>
+          <ul><li><strong>Income and social status:</strong> people need enough money for food and other basics.</li><li><strong>Childhood experiences:</strong> children need healthy food to grow and learn.</li></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <div>
+          <div class="section-top"><h2>History and funding</h2></div>
+          <div class="timeline"><div class="year">1984</div><p>The Ottawa Food Bank started in 1984 in the basement of the old police station on Waller Street. Small food banks and volunteers worked together to start it. It was meant to be temporary, but it grew into an important food-relief organization.</p><div class="year">Today</div><p>Today, it supports food programs across Ottawa. It is a registered charity and mostly relies on community support.</p></div>
+        </div>
+        <div class="card"><h3>Where the funding comes from</h3><p>The funding usually comes from community support, private donations, food donations, fundraising events, grants, and business sponsors.</p><h3 style="margin-top:22px">Partners</h3><p>It works with local food programs, food banks, shelters, schools, Ottawa Public Health, the City of Ottawa, Feed Ontario, and Food Banks Canada.</p></div>
+      </div>
+    </section>
+
+    <section class="help" id="connect">
+      <div class="wrap helpbox">
+        <div><p class="eyebrow" style="color:#725300">NEED FOOD SUPPORT?</p><h2>Find a food program near you.</h2><p>The Ottawa Food Bank works in Ottawa. Use the official finder to find a food program near you. Need help? Call <strong>613-745-7001</strong>. You can also call <strong>211</strong> for food-support options.</p><p>Other food banks serve other cities. For example, Daily Bread Food Bank serves Toronto.</p><p><strong>Ottawa Food Bank:</strong> 2001 Bantree Street, Ottawa, ON K1B 4X3<br><a href="mailto:foodbank@ottawafoodbank.ca">foodbank@ottawafoodbank.ca</a></p></div>
+        <a class="button" href="https://www.ottawafoodbank.ca/get-help/" target="_blank" rel="noopener">Open the official finder</a>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="wrap sources"><div class="section-top"><h2>Sources</h2><p>Primary and public-health sources used for this educational page.</p></div>
+        <ol>
+          <li><a href="https://www.ottawafoodbank.ca/hunger-in-ottawa/charity-intelligence/" target="_blank" rel="noopener">Ottawa Food Bank - Charity Intelligence and financial information</a></li>
+          <li><a href="https://www.ottawafoodbank.ca/hunger-in-ottawa/about-us/" target="_blank" rel="noopener">Ottawa Food Bank - About Us</a></li>
+          <li><a href="https://www.ottawafoodbank.ca/get-help/" target="_blank" rel="noopener">Ottawa Food Bank - Get Help</a></li>
+          <li><a href="https://www.ottawafoodbank.ca/2025-ottawa-hunger-report/" target="_blank" rel="noopener">Ottawa Food Bank - 2025 Ottawa Hunger Report</a></li>
+          <li><a href="https://www.ottawapublichealth.ca/en/public-health-topics/food-insecurity.aspx" target="_blank" rel="noopener">Ottawa Public Health - Food Insecurity</a></li>
+          <li><a href="https://www.canada.ca/en/services/health/determinants-health.html" target="_blank" rel="noopener">Government of Canada - Determinants of Health</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><p>Website created by Daniel Okonkwo. This site shares information about the Ottawa Food Bank. For current service information, contact the Ottawa Food Bank directly or use its official food finder.</p></div></footer>
+</body>
+</html>
