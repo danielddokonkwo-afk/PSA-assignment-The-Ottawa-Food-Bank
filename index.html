@@ -15,7 +15,8 @@
     .wrap { width:min(1120px, calc(100% - 40px)); margin:auto; }
     header { background:var(--ink); color:white; padding:18px 0; }
     nav { display:flex; justify-content:space-between; align-items:center; gap:20px; }
-    .brand { font-weight:800; letter-spacing:.01em; text-decoration:none; color:white; }
+    .brand { font-weight:800; letter-spacing:.01em; text-decoration:none; color:white; display:flex; align-items:center; gap:10px; }
+    .ofb-logo { width:46px; height:46px; object-fit:contain; mix-blend-mode:multiply; }
     .navlinks { display:flex; gap:18px; flex-wrap:wrap; font-size:.92rem; }
     .navlinks a { color:#dff4ec; text-decoration:none; }
     .hero { background:var(--ink); color:white; overflow:hidden; position:relative; padding:82px 0 90px; }
@@ -48,19 +49,26 @@
     .timeline .year { font-weight:800; color:var(--green); }
     .timeline p { margin:5px 0 21px; }
     .help { background:var(--gold); }
+    .photos { display:grid; grid-template-columns:1.1fr .9fr; gap:20px; }
+    figure { margin:0; background:white; border-radius:13px; overflow:hidden; box-shadow:0 4px 18px #17324712; }
+    figure img { display:block; width:100%; height:265px; object-fit:cover; }
+    figcaption { padding:14px 16px; font-size:.92rem; color:#4c616b; }
+    .why { margin-top:22px; background:var(--mist); border-radius:13px; padding:24px; color:#102a3a; font-family:Arial, Helvetica, sans-serif; }
+    .why h3 { color:var(--green); margin-bottom:9px; }
+    .why p { color:#102a3a; font-size:1.08rem; font-weight:500; line-height:1.65; }
     .helpbox { background:white; border-radius:16px; padding:31px; display:grid; grid-template-columns:1fr auto; gap:28px; align-items:center; }
     .button { display:inline-block; color:white; background:var(--ink); font-weight:800; padding:13px 18px; border-radius:8px; text-decoration:none; }
     .sources { font-size:.93rem; }
     .sources li { margin:12px 0; }
     footer { background:var(--ink); color:#d8e7e5; padding:34px 0; font-size:.9rem; }
     footer p { margin:0; max-width:850px; }
-    @media (max-width:760px) { .grid,.stat-grid,.split,.helpbox { grid-template-columns:1fr; } .section-top { align-items:start; flex-direction:column; } .hero { padding:64px 0 74px; } nav { align-items:start; flex-direction:column; } }
+    @media (max-width:760px) { .grid,.stat-grid,.split,.helpbox,.photos { grid-template-columns:1fr; } .section-top { align-items:start; flex-direction:column; } .hero { padding:64px 0 74px; } nav { align-items:start; flex-direction:column; } }
   </style>
 </head>
 <body>
   <header>
     <nav class="wrap" aria-label="Main navigation">
-      <a class="brand" href="#top">Food Access is Health</a>
+      <a class="brand" href="#top"><img class="ofb-logo" src="https://isarta.com/images-offres/2025/253/114602/114602_logo_rs.png" alt="Ottawa Food Bank logo">Food Access is Health</a>
       <div class="navlinks"><a href="#about">About</a><a href="#health">Health</a><a href="#connect">Find help</a><a href="#sources">Sources</a></div>
     </nav>
   </header>
@@ -78,21 +86,32 @@
       <div class="wrap">
         <div class="section-top"><h2>What the Ottawa Food Bank does</h2><p>The Ottawa Food Bank helps people get food when they do not have enough money.</p></div>
         <div class="grid">
-          <article class="card"><h3>Purpose</h3><p>The Ottawa Food Bank helps people in Ottawa who need food. People can get food there. They can also volunteer or donate food.</p></article>
-          <article class="card"><h3>Food and essentials</h3><p>It provides fresh food and canned food. It also helps with things like diapers, baby food, toiletries, cleaning supplies, etc.</p></article>
-          <article class="card"><h3>Community action</h3><p>The Food Bank grows some food. It accepts food donations from local farmers and neigbours too. People can also run food drives to help out.</p></article>
+          <article class="card"><h3>Purpose</h3><p>The purpose of the Ottawa Food Bank is to supply people who need food in Ottawa. People can get food through local programs. They can also volunteer or donate food.</p></article>
+          <article class="card"><h3>Food and essentials</h3><p>It provides fresh food and canned food. It also helps with diapers, baby food, toiletries, cleaning supplies, etc.</p></article>
+          <article class="card"><h3>Community action</h3><p>The Food Bank grows some of its food. It accepts donations from local farmers too. People can run food drives and volunteer to help out.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="wrap">
+        <div class="section-top"><h2>People working together</h2><p>Volunteers and donations are a big part of how food gets sorted and shared with people who need it.</p></div>
+        <div class="photos">
+          <figure><img src="https://www.ottawafoodbank.ca/wp-content/uploads/2023/06/Doors-Open-Ottawa-2023-53-scaled.jpg" alt="Volunteers sorting food at the Ottawa Food Bank"><figcaption>Volunteers sort donated food so it can be shared with community food programs. Photo: Ottawa Food Bank.</figcaption></figure>
+          <figure><img src="https://assets.obj.ca/2022/12/MaJOWyTv-DSC00550_rgb_web-1024x683.webp" alt="Volunteers sorting donated food in a warehouse"><figcaption>Food donations need to be checked, sorted, packed, etc. before they are delivered. Photo: Ottawa Business Journal.</figcaption></figure>
         </div>
       </div>
     </section>
 
     <section class="stats">
       <div class="wrap">
-        <div class="section-top"><h2>Who is served</h2><p>The Food Bank helps people in Ottawa who cannot afford good food. It also helps people who are going through a hard time with money.</p></div>
+        <div class="section-top"><h2>Who is served</h2><p>The Food Bank serves people in Ottawa who cannot afford good food. This includes people going through a rough time financially and working-poor individuals.</p></div>
         <div class="stat-grid">
           <div class="stat"><strong>Ottawa</strong><span>It serves people in Ottawa. Food programs often serve the area close to where a person lives.</span></div>
-          <div class="stat"><strong>All ages</strong><span>Individuals and families use the Food Bank. About 37% of the people helped are children. Not having enough food can affect a child's learning and future.</span></div>
+          <div class="stat"><strong>All ages</strong><span>Individuals and families use the Food Bank. About 37% of the people helped are children. Not getting enough food can affect a child's learning and future.</span></div>
           <div class="stat"><strong>All genders</strong><span>People of all genders and ages deserve access to healthy food.</span></div>
         </div>
+        <div class="why"><h3>Why this matters</h3><p>When people do not have enough food, it can make everyday life harder. It may be harder to focus at school or work. It can also cause stress. Food support gives people some help when they need it most.</p></div>
       </div>
     </section>
 
@@ -103,12 +122,12 @@
           <p>Food insecurity is when someone does not have enough money to buy the food they need. They may worry about food. They might eat less or skip meals.</p>
           <p>This can affect a person's body and stress level. It can also make it harder to learn. Food banks help in emergencies. People still need enough income and affordable housing.</p>
           <h3 style="margin-top:25px;color:var(--green)">Dimensions of health supported</h3>
-          <p><strong>Physical health:</strong> healthy food gives people energy. It helps them grow and stay well. <strong>Intellectual health:</strong> good food helps children learn and develop. Food support can also lower stress.</p>
+          <p><strong>Physical health:</strong> balanced food gives people energy. It supports growth and immune function. It can also lower the risk of some chronic health problems. <strong>Intellectual health:</strong> enough calories and nutrients can improve focus and memory. This is especially important for children in school.</p>
         </div>
         <aside class="determinants">
           <h2>Determinants of health</h2>
-          <p>The Food Bank helps with two things that can affect health:</p>
-          <ul><li><strong>Income and social status:</strong> people need enough money for food and other basic needs.</li><li><strong>Childhood experiences:</strong> children need healthy food so they can grow and learn.</li></ul>
+          <p>The Food Bank also helps with two determinants of health:</p>
+          <ul><li><strong>Income and social status:</strong> hunger can be a symptom of poverty. The Food Bank helps when people are having financial difficulties.</li><li><strong>Childhood experiences:</strong> proper nutrition can help children grow and develop. It may also prevent delays and long-term health problems.</li></ul>
         </aside>
       </div>
     </section>
@@ -117,15 +136,15 @@
       <div class="wrap split">
         <div>
           <div class="section-top"><h2>History and funding</h2></div>
-          <div class="timeline"><div class="year">1984</div><p>The Ottawa Food Bank started in 1984. It began in the basement of the old police station on Waller Street. Small food banks and volunteers worked together to start it. It was meant to be temporary but it became an important food-relief organization.</p><div class="year">Today</div><p>Today it supports food programs across Ottawa. It is a registered charity. It mostly relies on support from the community.</p></div>
+          <div class="timeline"><div class="year">1984</div><p>This service was founded in 1984 in the basement of the former police station on Waller Street. It was meant to be temporary. Because poverty and food insecurity continued, it grew into a food-relief organization.</p><div class="year">Today</div><p>Today it supports food programs across Ottawa. It is a registered charity. It mostly relies on support from the community.</p></div>
         </div>
-        <div class="card"><h3>Where the funding comes from</h3><p>The funding usually comes from community support. It also comes from private donations, food donations, fundraising events, grants, and business sponsors.</p><h3 style="margin-top:22px">Partners</h3><p>It works with local food programs, food banks, shelters, and schools. It also works with Ottawa Public Health, the City of Ottawa, Feed Ontario, and Food Banks Canada.</p></div>
+        <div class="card"><h3>Where the funding comes from</h3><p>Most funding comes from community support. This includes individual donations, sponsorships, charitable foundations, food donations, fundraising events, etc. The Food Bank also receives some government funding through municipal or provincial grants.</p><h3 style="margin-top:22px">Partners</h3><p>It works with local food banks and food cupboards. These include neighbourhood groups, community associations, faith-based organizations, shelters, and schools. It also works with Ottawa Public Health, the City of Ottawa, Feed Ontario, and Food Banks Canada.</p></div>
       </div>
     </section>
 
     <section class="help" id="connect">
       <div class="wrap helpbox">
-        <div><p class="eyebrow" style="color:#725300">NEED FOOD SUPPORT?</p><h2>Find a food program near you.</h2><p>The Ottawa Food Bank works in Ottawa. Use the official finder to find a food program near you. If you need help call <strong>613-745-7001</strong>. You can also call <strong>211</strong> for food-support options.</p><p>Other food banks help other cities. For example, Daily Bread Food Bank serves Toronto.</p><p><strong>Ottawa Food Bank:</strong> 2001 Bantree Street, Ottawa, ON K1B 4X3<br><a href="mailto:foodbank@ottawafoodbank.ca">foodbank@ottawafoodbank.ca</a></p></div>
+        <div><p class="eyebrow" style="color:#725300">NEED FOOD SUPPORT?</p><h2>Find a food program near you.</h2><p>The Ottawa Food Bank is based in Ottawa and serves people in Ottawa. Its address is 2001 Bantree Street. Use the official finder to find a food program near you. If you need help call <strong>613-745-7001</strong>. You can also call <strong>211</strong> for food-support options.</p><p>Other food banks serve other cities. For example, Fort York Food Bank and Daily Bread Food Bank serve Toronto.</p><p><strong>Ottawa Food Bank:</strong> 2001 Bantree Street, Ottawa, ON K1B 4X3<br><a href="mailto:foodbank@ottawafoodbank.ca">foodbank@ottawafoodbank.ca</a></p></div>
         <a class="button" href="https://www.ottawafoodbank.ca/get-help/" target="_blank" rel="noopener">Open the official finder</a>
       </div>
     </section>
@@ -139,6 +158,9 @@
           <li><a href="https://www.ottawafoodbank.ca/2025-ottawa-hunger-report/" target="_blank" rel="noopener">Ottawa Food Bank - 2025 Ottawa Hunger Report</a></li>
           <li><a href="https://www.ottawapublichealth.ca/en/public-health-topics/food-insecurity.aspx" target="_blank" rel="noopener">Ottawa Public Health - Food Insecurity</a></li>
           <li><a href="https://www.canada.ca/en/services/health/determinants-health.html" target="_blank" rel="noopener">Government of Canada - Determinants of Health</a></li>
+          <li><a href="https://www.ottawafoodbank.ca/volunteer/" target="_blank" rel="noopener">Ottawa Food Bank - Volunteer page and volunteer photo</a></li>
+          <li><a href="https://obj.ca/ottawa-food-bank/" target="_blank" rel="noopener">Ottawa Business Journal - volunteer sorting photo</a></li>
+          <li><a href="https://isarta.com/jobs/?job=114602&amp;lang=en" target="_blank" rel="noopener">Ottawa Food Bank logo source</a></li>
         </ol>
       </div>
     </section>
